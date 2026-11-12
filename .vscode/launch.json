@@ -19,6 +19,26 @@
             "target": "swift_squat",
             "configuration": "release",
             "preLaunchTask": "swift: Build Release swift_squat (swift_squat)"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift_squat}/SwiftSquat",
+            "name": "Debug swift_squat (SwiftSquat)",
+            "target": "swift_squat",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug swift_squat (SwiftSquat)"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift_squat}/SwiftSquat",
+            "name": "Release swift_squat (SwiftSquat)",
+            "target": "swift_squat",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release swift_squat (SwiftSquat)"
         }
     ]
 }
