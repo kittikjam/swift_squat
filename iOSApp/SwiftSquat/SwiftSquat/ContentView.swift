@@ -1,14 +1,5 @@
 import SwiftUI
 
-@main
-struct SwiftSquatApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
-}
-
 struct ContentView: View {
     var body: some View {
         VStack(spacing: 16) {
@@ -23,6 +14,9 @@ struct ContentView: View {
             }
         }
         .padding(40)
-        .frame(minWidth: 400, minHeight: 300)
     }
+}
+
+#Preview {
+    ContentView()
 }
