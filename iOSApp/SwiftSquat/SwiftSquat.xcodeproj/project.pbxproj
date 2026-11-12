@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		467E79AF30A63AD300EDCD5C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467E79AE30A63AD300EDCD5C /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		46242B7B30A62539006C35DF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		46242B6930A62538006C35DF /* SwiftSquat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSquat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46242B7A30A62539006C35DF /* SwiftSquatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSquatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46242B8430A62539006C35DF /* SwiftSquatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSquatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		467E79AE30A63AD300EDCD5C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				467E79AF30A63AD300EDCD5C /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +84,7 @@
 				46242B6B30A62538006C35DF /* SwiftSquat */,
 				46242B7D30A62539006C35DF /* SwiftSquatTests */,
 				46242B8730A62539006C35DF /* SwiftSquatUITests */,
+				467E79AD30A63AD300EDCD5C /* Frameworks */,
 				46242B6A30A62538006C35DF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +97,14 @@
 				46242B8430A62539006C35DF /* SwiftSquatUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		467E79AD30A63AD300EDCD5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				467E79AE30A63AD300EDCD5C /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,8 +336,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -378,8 +393,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -397,6 +412,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftSquat/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Swift Squat uses the camera to analyse exercise form.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -427,6 +443,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftSquat/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Swift Squat uses the camera to analyse exercise form.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
